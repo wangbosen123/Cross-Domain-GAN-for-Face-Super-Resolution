@@ -59,16 +59,33 @@
 提出了一個跨解析度的分類器，其中低解析度分類模型具有較強的一般性，但缺乏鑑別性，相對而言，高解析度分類模型則更具鑑別性，但容易因資料不足而產生過度擬合的現象。最終，我們結合了這兩者，以彌補各自的缺點。 
 
 #### 識別模型  
+1. 學生模型的輸入為各種不同的低解析圖像經過編碼器(Enc)產生的編碼Z_(i,j,r)^ 。老師模型的輸入為真實高解析圖像經過編碼器(Enc)產生的編碼Z_(i,j,r=1)^ 。並經由回歸模型（Reg）產生相應的編碼Z_(i,j,r)^( 〖reg〗^3 )。
+2. 最後我們將Student模型和Teacher模型輸出相加，學生模型學習多樣低解析度資料，鑑別率不足但資料多；老師模型學習高解析度，鑑別率高但資料少容易過擬合，相加彌補彼此缺點，最終識別實驗證明這樣的概念可以有效的提高準確率。
 
-#### GAN Inversion
+#### GAN Inversion  
+![image](https://github.com/wangbosen123/Cross-Domain-GAN-for-Face-Super-Resolution/assets/92494937/3e0f78ab-b6e8-4dc4-b8af-f40c363bb929)
+![image](https://github.com/wangbosen123/Cross-Domain-GAN-for-Face-Super-Resolution/assets/92494937/ca07facc-f666-43f3-b72a-eac7f515eefc)  
 
 #### 演算法  
+![image](https://github.com/wangbosen123/Cross-Domain-GAN-for-Face-Super-Resolution/assets/92494937/a482066b-b955-4dcb-9f6a-fc08a7a0a766)  
+
 
 #### 合成結果圖  
+驗證在不同倍率以及不同模糊下不同方法下的合成結果。  
+![image](https://github.com/wangbosen123/Cross-Domain-GAN-for-Face-Super-Resolution/assets/92494937/fef150cc-0bb5-4177-95e3-05911ec23a0b)  
+![image](https://github.com/wangbosen123/Cross-Domain-GAN-for-Face-Super-Resolution/assets/92494937/5c836371-7919-4ce1-9ff0-98daa2d06b0b)  
+![image](https://github.com/wangbosen123/Cross-Domain-GAN-for-Face-Super-Resolution/assets/92494937/b5573f44-8f13-4bcc-ae55-964470079c51)  
 
-#### 量化數據
+
+#### 量化數據  
+![image](https://github.com/wangbosen123/Cross-Domain-GAN-for-Face-Super-Resolution/assets/92494937/51eb3fb5-5dd2-4390-b77f-c729cfd1e32a)  
+![image](https://github.com/wangbosen123/Cross-Domain-GAN-for-Face-Super-Resolution/assets/92494937/dabadb5f-39a6-4225-a807-5fbc5fa2df61)  
 
 ### 識別結果圖  
+1. 提出的Student和Teacher輸出相加，有效提高準確率。  
+2. 在沒學過的倍率且解析度較低的情況下，透過inversion 限制teacher的分類結果要跟student 分類結果一致，來提高teacher 的效能，進而讓整體識別提高  
+![image](https://github.com/wangbosen123/Cross-Domain-GAN-for-Face-Super-Resolution/assets/92494937/c5356323-5f8e-4741-b91b-3324e4992b07)
+
 
 
 
