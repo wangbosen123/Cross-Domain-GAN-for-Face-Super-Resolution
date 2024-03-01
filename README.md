@@ -1,4 +1,4 @@
-![image](https://github.com/wangbosen123/Cross-Domain-GAN-for-Face-Super-Resolution/assets/92494937/47647e75-8f94-48da-96eb-34ee38a7755a)# Cross-Domain GAN For Face Super-Resolution  
+# Cross-Domain GAN For Face Super-Resolution
 ## 應用  
 ### 監控系統  
 低解析度還原高解析度技術，增強圖像的品質和細節可見性  
