@@ -20,7 +20,7 @@
 利用低解析編碼與對應高解析編碼之間的對應關係且兩者共享相同的編碼器(Encoder)，建構低解析域以及高解析域之間的相互關聯性。  
 
 我們的架構圖如下圖所示  
-#### 架構圖  
+#### **架構圖**  
 ![image](https://github.com/wangbosen123/Cross-Domain-GAN-for-Face-Super-Resolution/assets/92494937/3cd14ed9-4663-4bd3-97df-23d48f8e189a)
 
 
