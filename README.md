@@ -41,11 +41,17 @@
 
 
 #### 回歸分布圖  
-左側展示了未經過回歸模型處理的空間分布，而右側展示了經過回歸模型處理後的空間分布。顯然可見，經過回歸模型處理後，每個身分不同解析度之間呈現顯著聚合現象。  
-![image](https://github.com/wangbosen123/Cross-Domain-GAN-for-Face-Super-Resolution/assets/92494937/d2386bea-257e-4d5c-b193-547c56afb638)  
+            左側展示了未經過回歸模型處理的空間分布，而右側展示了經過回歸模型處理後的空間分布。顯然可見，經過回歸模型處理後，每個身分不同解析度之間呈現顯著聚合現象。  
+![image](https://github.com/wangbosen123/Cross-Domain-GAN-for-Face-Super-Resolution/assets/92494937/ee13ce8d-f5e1-4783-930b-1b7d473bbe9d)
 
 
 ##### ablation study(有無加入回歸的限制)  
+評估在訓練過程中是否添加𝐋𝐫𝐞𝐠對於測試資料的視覺化和量化結果有何影響。   
+(a) 高解析圖像  
+(b) 由左至右分別為4倍、6.4倍以及8倍低解析圖像，6.4倍率為模型未學習過倍率  
+(c) 𝐿_𝑟𝑒𝑐^𝑑+𝐿_𝑟𝑒𝑐^𝑔+𝐿_(𝐺_𝑎𝑑𝑣 )+𝐿_(𝐷_𝑎𝑑𝑣 )  
+(d) 𝐿_𝑟𝑒𝑐^𝑑+𝐿_𝑟𝑒𝑐^𝑔+𝐿_(𝐺_𝑎𝑑𝑣 )+𝐿_(𝐷_𝑎𝑑𝑣 )+𝐿_𝑟𝑒𝑔  
+![image](https://github.com/wangbosen123/Cross-Domain-GAN-for-Face-Super-Resolution/assets/92494937/e3e176aa-522e-4d20-9529-a5a0c7653560)
 
 
 
@@ -54,7 +60,7 @@
 
 #### 識別模型  
 
-## GAN Inversion
+#### GAN Inversion
 
 #### 演算法  
 
