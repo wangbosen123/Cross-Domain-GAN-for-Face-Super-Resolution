@@ -25,11 +25,11 @@
 
 我們的架構圖如下圖所示  
 #### 架構圖  
-            ![image](https://github.com/wangbosen123/Cross-Domain-GAN-for-Face-Super-Resolution/assets/92494937/3cd14ed9-4663-4bd3-97df-23d48f8e189a)  
+![image](https://github.com/wangbosen123/Cross-Domain-GAN-for-Face-Super-Resolution/assets/92494937/3cd14ed9-4663-4bd3-97df-23d48f8e189a)  
 
 #### 損失函數  
             我們將利用這些損失函數，修正我們模型。
-            ![image](https://github.com/wangbosen123/Cross-Domain-GAN-for-Face-Super-Resolution/assets/92494937/df17bf41-7389-42ed-baab-72d0649faff7)  
+![image](https://github.com/wangbosen123/Cross-Domain-GAN-for-Face-Super-Resolution/assets/92494937/df17bf41-7389-42ed-baab-72d0649faff7)  
 
 #### 訓練程序  
             (1)	訓練上半部壓縮還原模型(Enc,Dec)  
@@ -37,7 +37,7 @@
             (3)	訓練生成對抗網路(Gan)  
             (4)	端到端的整體轉換模型訓練(End to End)  
             (5)	跨域的分類模型訓練(teacher, student model)  
-            ![image](https://github.com/wangbosen123/Cross-Domain-GAN-for-Face-Super-Resolution/assets/92494937/4f4d4d44-08cf-42e2-bd73-bedafef3b476)  
+![image](https://github.com/wangbosen123/Cross-Domain-GAN-for-Face-Super-Resolution/assets/92494937/4f4d4d44-08cf-42e2-bd73-bedafef3b476)  
 
 
 #### 回歸分布圖  
