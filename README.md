@@ -19,16 +19,33 @@
 ### 跨域生成模型  
 利用低解析編碼與對應高解析編碼之間的對應關係且兩者共享相同的編碼器(Encoder)，建構低解析域以及高解析域之間的相互關聯性。  
 
+**資料來源以及前處理如下圖所示**  
+![image](https://github.com/wangbosen123/Cross-Domain-GAN-for-Face-Super-Resolution/assets/92494937/4c2d811b-803d-4812-a0d7-03bc3bbdf582)  
+
+
 我們的架構圖如下圖所示  
-#### **架構圖**  
-![image](https://github.com/wangbosen123/Cross-Domain-GAN-for-Face-Super-Resolution/assets/92494937/3cd14ed9-4663-4bd3-97df-23d48f8e189a)
+#### 架構圖  
+![image](https://github.com/wangbosen123/Cross-Domain-GAN-for-Face-Super-Resolution/assets/92494937/3cd14ed9-4663-4bd3-97df-23d48f8e189a)  
+
+#### 損失函數  
+我們將利用這些損失函數，修正我們模型。
+![image](https://github.com/wangbosen123/Cross-Domain-GAN-for-Face-Super-Resolution/assets/92494937/df17bf41-7389-42ed-baab-72d0649faff7)  
+
+#### 訓練程序  
+(1)	訓練上半部壓縮還原模型(Enc,Dec)  
+(2)	訓練回歸模型(Reg)  
+(3)	訓練生成對抗網路(Gan)  
+(4)	端到端的整體轉換模型訓練(End to End)  
+(5)	跨域的分類模型訓練(teacher, student model)  
+![image](https://github.com/wangbosen123/Cross-Domain-GAN-for-Face-Super-Resolution/assets/92494937/4f4d4d44-08cf-42e2-bd73-bedafef3b476)  
 
 
-##### 回歸分布圖  
-![]()  
+#### 回歸分布圖  
+左側展示了未經過回歸模型處理的空間分布，而右側展示了經過回歸模型處理後的空間分布。顯然可見，經過回歸模型處理後，每個身分不同解析度之間呈現顯著聚合現象。  
+![image](https://github.com/wangbosen123/Cross-Domain-GAN-for-Face-Super-Resolution/assets/92494937/d2386bea-257e-4d5c-b193-547c56afb638)  
+
 
 ##### ablation study(有無加入回歸的限制)  
-![]()  
 
 
 
@@ -36,18 +53,16 @@
 提出了一個跨解析度的分類器，其中低解析度分類模型具有較強的一般性，但缺乏鑑別性，相對而言，高解析度分類模型則更具鑑別性，但容易因資料不足而產生過度擬合的現象。最終，我們結合了這兩者，以彌補各自的缺點。 
 
 #### 識別模型  
-![]()  
 
 ## GAN Inversion
 
-#### 演算法
-![]()  
+#### 演算法  
 
-#### 結果圖  
-![]()  
+#### 合成結果圖  
+
+#### 量化數據
 
 ### 識別結果圖  
-**![]() 
 
 
 
